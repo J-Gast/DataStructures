@@ -14,6 +14,14 @@ public class Main {
         Node node3 = new Node(7);
         tree.addNode(node3);
 
-        System.out.println(node1.getRightChild().getValue());
+        Node node4 = new Node(12);
+        tree.addNode(node4);
+
+        Node node5 = new Node(15);
+        tree.addNode(node5);
+
+        for (Node element: tree.postOrder(node)) {
+            System.out.println(element.getValue());
+        }
     }
 }
